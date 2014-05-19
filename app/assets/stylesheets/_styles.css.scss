@@ -2,12 +2,61 @@ body {
   background-color: #000;
 }
 
+h5{border-top: 1px solid gray; padding-top: 7px;}
+
+
 .container {
+  width: 30%;
   float: none;
-  margin: 0 auto;
+  margin: 0px auto 10px auto;
   text-align: center;
-  padding-top: 45px;
-  .img-responsive {
-    margin: 0 auto;
+}
+
+
+
+.item{
+  img{
+    width: 100%;
+    margin: auto;
+  }
+  }
+
+.vertical{
+  max-width: 60% !important;
+  margin: auto;
+  left: 0px;
+  right: 0px;
+  height: 480px !important;
+}
+
+.horizontal{
+  margin:auto;
+  height: 480px !important;
+
+  max-width: 100% !important;
+  img{
+  
+  height: 380px !important;
+  
   }
 }
+
+.carousel{
+  width: 50%;
+  margin: auto;
+}
+
+#footer{
+  a{color:white;}
+  a:hover{color:gray;}
+width:50%;
+margin:5px auto;
+  #telefono{
+  text-align:center;
+  margin: 20px 0px;
+ } 
+}
+
+
+
+

@@ -1,2 +1,58 @@
-.container
-  = image_tag '/assets/en-construccion.jpg', class: 'img-responsive'
+#header.container
+  %h1
+    Renato Ghilardi
+  %h5
+    FOTOGRAFIA Y VIDEO
+
+#body
+  #carousel.carousel.slide{:data => {'ride' => 'carousel'}}
+    %ol.carousel-indicators
+      %li.active{:data => {'target' => '#carousel', 'slide-to' => '0'}}
+      %li{:data => {'target' => '#carousel', 'slide-to' => '1'}}
+      %li{:data => {'target' => '#carousel', 'slide-to' => '2'}}
+      %li{:data => {'target' => '#carousel', 'slide-to' => '3'}}
+      %li{:data => {'target' => '#carousel', 'slide-to' => '4'}}
+      %li{:data => {'target' => '#carousel', 'slide-to' => '5'}}
+      %li{:data => {'target' => '#carousel', 'slide-to' => '6'}}
+      %li{:data => {'target' => '#carousel', 'slide-to' => '7'}}
+      %li{:data => {'target' => '#carousel', 'slide-to' => '8'}}
+      %li{:data => {'target' => '#carousel', 'slide-to' => '9'}}
+      %li{:data => {'target' => '#carousel', 'slide-to' => '10'}}
+
+    .carousel-inner
+      .item.vertical.active
+        =image_tag(image_path('01.jpg'));
+      .item.horizontal
+        =image_tag(image_path('02.jpg'));
+      .item.horizontal
+        =image_tag(image_path('03.jpg'));
+      .item.horizontal
+        =image_tag(image_path('04.jpg'));
+      .item.vertical
+        =image_tag(image_path('05.jpg'));
+      .item.vertical
+        =image_tag(image_path('06.jpg'));
+      .item.vertical
+        =image_tag(image_path('07.jpg'));
+      .item.horizontal
+        =image_tag(image_path('08.jpg'));
+      .item.vertical
+        =image_tag(image_path('09.jpg'));
+      .item.horizontal
+        =image_tag(image_path('10.jpg'));
+      .item.vertical
+        =image_tag(image_path('11.jpg'));
+
+    %a.left.carousel-control{:href => "#carousel", :data => {'slide' => "prev"}}
+      %span.glyphicon.glyphicon-chevron-left
+              
+    %a.right.carousel-control{:href => "#carousel", :data => {'slide' => "next"}}
+      %span.glyphicon.glyphicon-chevron-right
+                        
+#footer
+  #telefono
+    %span
+      997447585 / 99408*6630
+    %br
+    %span
+      =mail_to "info@renatoghilardi.com"
